@@ -13,4 +13,4 @@ breakfastmenu = breakfastmenu.set_index('Fruit')
 fruits_selected = streamlit.multiselect('Choose your Fruit',list(breakfastmenu.index),['Avocado','Strawberries'])
 #streamlit.dataframe(breakfastmenu)
 fruits_to_show = breakfastmenu.loc[fruits_selected]
-streamlist.dataframe(fruits_to_show)
+streamlit.dataframe(fruits_to_show)
